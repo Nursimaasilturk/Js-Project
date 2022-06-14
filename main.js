@@ -81,7 +81,7 @@ if (x === y) {
 //----TERNARY OPERATOR---
 if (true) console.log("yuppi");
 true ? console.log("çalışır") : console.log("nah çalışır");
-*/
+
 
 ///FONKSIYONLARRR
 
@@ -103,3 +103,29 @@ let best = (name) => {
   console.log("Arrow function");
 };
 best(awesome);
+
+
+/*
+	1-Create a function that sum two number and return result with message | Use basic function
+	2-Create a that take an array as a parameter and increaase by second parameter and return the new array | anonymous function
+	3-use arrow function for check is status is true or not | arrow function with ternary operator
+*/
+/*
+sayi1=3;
+sayi2=4;
+function sum(x,y){
+	return `${x} + ${y} = ${x+y}`;
+}
+console.log(sum(sayi1,sayi2));
+
+const arr=[1,2,3,4];
+let anym = function(myarr,increase){
+	let newArr=myarr.map(item=>item+increase);
+	return newArr;
+}
+console.log(anym(arr,"Turşu"));
+
+const omar ={status:false};
+let check=(name)=>name.status?"Ogrenci Aktif":"Öğrenci Devamsız";
+
+console.log(check(omar)); */
