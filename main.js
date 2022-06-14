@@ -32,7 +32,7 @@ Exercise
 7- print all student names with for loop
 8- convert to student status to true value
 9- print "🔥 fire" if the score > 85
-*/
+
 const studentList =[];
 const student1={id:undefined,firstname:"nursima",email:undefined,score:5,password:9,status:false}
 const student2={id:undefined,firstname:"sima",email:undefined,score:6,password:4,status:false}
@@ -49,3 +49,57 @@ for(let i=0;i<studentList.length;i++){
 		 console.log("🔥 fire")
 		
 }
+
+USAGE OF VARIABLES
+let 
+    if data value changes
+
+const
+    functions
+    object
+    array
+
+---------TEMPLATE LITERAL-------
+let name = "ahmet";
+let email = `my name is ${name}.`;
+console.log(email);
+console.log(`2+2=${2 > 1}`);
+
+
+// == & === 3 eşitlikte türleri de inceler, 2 eşitlikte değere bakar
+let x = "5";
+let y = 5;
+if (x === y) {
+  console.log(typeof x);
+  console.log(typeof y);
+  console.log(x == y);
+} else {
+  console.log(x === y);
+}
+
+
+//----TERNARY OPERATOR---
+if (true) console.log("yuppi");
+true ? console.log("çalışır") : console.log("nah çalışır");
+*/
+
+///FONKSIYONLARRR
+
+//1-basic function
+function nursima() {
+  console.log("Hello World");
+}
+nursima();
+
+//2-anonymous function
+let awesome = function () {
+  console.log("Anonmyous function");
+};
+awesome();
+
+//3- arrow function
+let best = (name) => {
+  name();
+  console.log("Arrow function");
+};
+best(awesome);
